@@ -19,7 +19,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         subscribeToKeyboardNotifications()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         self.textField.delegate = self
     }
     
